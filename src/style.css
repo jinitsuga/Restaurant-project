@@ -1,0 +1,233 @@
+body {
+  height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+/* SUBRAYADOS SACAR, menos distancia en contact us, el orden en las cartas de menu */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 115px;
+}
+nav button {
+  min-height: 50px;
+  min-width: 100px;
+}
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-button {
+  margin: 8px;
+  height: 45%;
+  width: 7%;
+  background-color: rgb(32, 29, 29);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.nav-button-disabled {
+  margin: 8px;
+  height: 45%;
+  width: 7%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+/* HOME CONTENT */
+.home-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.home-title {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -3.5px;
+}
+.intro-text {
+  font-size: 22px;
+  font-weight: 500;
+}
+.schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-bottom: 40px;
+}
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  margin-bottom: 35px;
+}
+.schedule-title {
+  font-size: 35px;
+}
+.sched-text {
+  font-weight: 600;
+}
+/* Class to hide nav pages */
+
+.hidden {
+  display: none;
+}
+
+/* Menu content */
+.menu-title {
+  color: black;
+  font-size: 26px;
+}
+.menu-subtitles {
+  color: black;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -3.5px;
+  text-decoration: underline;
+}
+.menu {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-box {
+  background-color: rgba(207, 204, 204, 0.507);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  width: 80%;
+  border-radius: 5px;
+  border-width: 8px;
+  margin-bottom: 13px;
+}
+.item-name {
+  font-size: 32px;
+  letter-spacing: -2.5px;
+}
+.item-price {
+  font-size: 30px;
+  font-weight: 900;
+}
+.item-text {
+  font-size: 18px;
+  width: 80%;
+}
+.main-content {
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+.menu-images {
+  height: 250px;
+  width: 250px;
+  padding-bottom: 25px;
+}
+/* Contact content */
+.contact-title {
+  color: black;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -3.5px;
+}
+
+.contact-info {
+  width: 85%;
+  margin-top: 10px;
+  border: 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5;
+  font-size: 24px;
+  font-weight: 800;
+  border-radius: 5px;
+}
+.contact {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* -- Footers -- */
+footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid;
+  align-self: flex-end;
+}
+.menu-footer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid;
+  align-self: flex-end;
+  margin-top: 25px;
+}
+
+.contact-footer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid;
+  align-self: center;
+  justify-self: flex-end;
+  margin-top: 25px;
+  position: fixed;
+  bottom: 5px;
+}
+@media (max-width: 1250px) {
+  .nav-button {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1040px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+    height: auto;
+  }
+  .intro-text {
+    width: 80%;
+  }
+}
